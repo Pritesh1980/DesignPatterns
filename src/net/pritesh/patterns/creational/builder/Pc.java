@@ -55,7 +55,7 @@ public class Pc
     private final String graphics;
     private final String psu;
 
-    public Pc( Builder builder )
+    private Pc( Builder builder )
     {
         this.cpu = builder.cpu;
         this.memory = builder.memory;
