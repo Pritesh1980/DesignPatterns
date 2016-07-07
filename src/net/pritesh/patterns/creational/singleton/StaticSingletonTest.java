@@ -5,9 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-/**
- * Created by Pritesh on 06/07/2016.
- */
+
 public class StaticSingletonTest
 {
     @Test
