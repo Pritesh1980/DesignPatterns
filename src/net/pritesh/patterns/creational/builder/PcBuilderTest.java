@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 
-public class PcTest
+public class PcBuilderTest
 {
     @Test
     public void buildTest() throws Exception
