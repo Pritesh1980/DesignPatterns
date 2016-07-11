@@ -23,9 +23,9 @@ public class PcBuilderTest
         Pc pc = builder.build();
 
         // Then
-        assertEquals(pc.getCpu(), CPU);
-        assertEquals(pc.getMemory(), MEMORY);
-        assertEquals(pc.getGraphics(), GRAPHICS);
-        assertEquals(pc.getPsu(), PSU);
+        assertEquals(CPU, pc.getCpu());
+        assertEquals(MEMORY, pc.getMemory());
+        assertEquals(GRAPHICS, pc.getGraphics());
+        assertEquals(PSU, pc.getPsu());
     }
 }

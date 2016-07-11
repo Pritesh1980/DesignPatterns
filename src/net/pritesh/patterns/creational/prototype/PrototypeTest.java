@@ -35,10 +35,10 @@ public class PrototypeTest
         attackingWarrior.setSword("Titanium");
 
         // Then
-        assertEquals(defensiveWarrior.getSword(), BASIC_SWORD);
-        assertEquals(defensiveWarrior.getShield(), BETTER_SHIELD);
-        assertEquals(attackingWarrior.getSword(), BETTER_SWORD);
-        assertEquals(attackingWarrior.getShield(), BASIC_SHIELD);
+        assertEquals(BASIC_SWORD, defensiveWarrior.getSword() );
+        assertEquals(BETTER_SHIELD, defensiveWarrior.getShield());
+        assertEquals(BETTER_SWORD, attackingWarrior.getSword());
+        assertEquals(BASIC_SHIELD, attackingWarrior.getShield());
     }
 
 }
