@@ -5,7 +5,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-
+/**
+ * Shows that a Bridge pattern means we can change implementations of
+ * {@link Formatter} and {@link Printer} independently.
+ */
 public class BridgeTest
 {
     private static FantasyFootballPlayer player1;
