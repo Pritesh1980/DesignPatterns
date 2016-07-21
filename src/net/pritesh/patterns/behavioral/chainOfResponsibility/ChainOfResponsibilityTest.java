@@ -3,7 +3,7 @@ package net.pritesh.patterns.behavioral.chainOfResponsibility;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 
 public class ChainOfResponsibilityTest
@@ -29,7 +29,7 @@ public class ChainOfResponsibilityTest
         String res = urgentRule.handleEmail(email);
 
         // Then
-        assertTrue(res.equals("URGENT"));
+        assertEquals(res,"URGENT");
     }
 
     @Test
@@ -43,7 +43,7 @@ public class ChainOfResponsibilityTest
 
         // Then
         System.out.println(res);
-        assertTrue(res.equals("LONG"));
+        assertEquals(res,"LONG");
     }
 
     @Test
@@ -56,7 +56,7 @@ public class ChainOfResponsibilityTest
         String res = urgentRule.handleEmail(email);
 
         // Then
-        assertTrue(res.equals("URGENT"));
+        assertEquals(res,"URGENT");
     }
 
     @Test
@@ -69,6 +69,6 @@ public class ChainOfResponsibilityTest
         String res = urgentRule.handleEmail(email);
 
         // Then
-        assertTrue(res.equals("DEFAULT"));
+        assertEquals(res,"DEFAULT");
     }
 }
